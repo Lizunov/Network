@@ -1,14 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Network</title>
+  <title>Сеть</title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-
-<%= yield %>
-
+<div class="navbar navbar-fixed-top">
+	<div class="navbar-inner">
+		<div class="container">
+			<a href="#" class="brand">Сеть</a>
+			<ul class="nav">
+				<li><%= link_to "Все статусы", statuses_path %></li>
+			</ul>
+		</div>
+	</div>
+</div>
+<div class="container">
+	<%= yield %>
+</div>	
 </body>
 </html>
