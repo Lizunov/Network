@@ -1,6 +1,10 @@
 // Place all the styles related to the statuses controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+body{
+	background: url(/assets/bg/gray_jean/gray_jean.png);
+}
+
 .status{
 	border-bottom: 1px solid #ccc;
 	padding: 5px 0;
@@ -11,7 +15,7 @@
 }
 
 .status.hover{
-	background: #fafafa;
+	background: url(/assets/bg/gray_jean/gray_jean.png);
 }
 
 .status .admin {
